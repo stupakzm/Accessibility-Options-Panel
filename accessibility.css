@@ -1,0 +1,38 @@
+.accessibility-options {
+  position: absolute; /* Ensures that positioning is relative to the nearest positioned ancestor */
+  z-index: 1000; /* Keeps it above other content */
+  width: auto; /* Adjust width as needed */
+  background-color: white;
+  border: 1px solid #ccc; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 10px;
+}
+
+
+.accessibility-widget {
+  border: none; /* Removes any default styling */
+  background: none; /* Transparent background */
+  padding: 5px; /* Sufficient padding */
+  cursor: pointer; /* Cursor pointer to indicate it's clickable */
+  display: flex; /* Use flex to center the image inside the button */
+  align-items: center; /* Center align the image vertically */
+  justify-content: center; /* Center align the image horizontally */
+}
+
+.accessibility-widget img {
+  height: auto; /* Maintain aspect ratio */
+  max-height: 40px; /* Example max height to fit your nav's design */
+  width: auto; /* Adjust width automatically */
+} 
+
+.magnify {
+  transform: scale(1.5);
+  transform-origin: center;
+}
+
+@media (max-width: 600px) {
+  .accessibility-widget img {
+    max-height: 30px; /* Smaller size for mobile devices */
+  }
+}
+
