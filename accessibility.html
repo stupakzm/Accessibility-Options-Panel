@@ -1,0 +1,30 @@
+<!--Add this button to header/list/body-->
+<button class="accessibility-widget" onclick="toggleAccessibilityOptions()">
+  <img src="./assets/accessibility-icon-black.png" alt="Accessibility Options">
+</button>
+
+<!-- Accessibility Options Panel -->
+<div id="accessibilityOptions" class="accessibility-options" style="display: none;">
+  <ul>
+      <li class="accessibility-option">
+          <input type="checkbox" id="highContrastCheckbox" class="highContrastCheckbox">
+          <label for="highContrastCheckbox">High Contrast</label>
+      </li>
+      <li class="accessibility-option">
+          <input type="checkbox" id="largerTextCheckbox" class="largerTextCheckbox">
+          <label for="largerTextCheckbox">Larger Text</label>
+      </li>
+      <li class="accessibility-option">
+          <input type="checkbox" id="magnifyingGlassCheckbox" class="magnifyingGlassCheckbox">
+          <label for="magnifyingGlassCheckbox">Magnifying Glass</label>
+      </li>
+      <li class="accessibility-option">
+          <input type="checkbox" id="keyboardNavigationCheckbox" class="keyboardNavigationCheckbox">
+          <label for="keyboardNavigationCheckbox">Keyboard Navigation</label>
+      </li>
+      <li class="accessibility-option">
+          <input type="checkbox" id="imageDescriptionCheckbox" class="imageDescriptionCheckbox">
+          <label for="imageDescriptionCheckbox">Image Descriptions</label>
+      </li>
+  </ul>
+</div>
